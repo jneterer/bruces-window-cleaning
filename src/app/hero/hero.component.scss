@@ -1,0 +1,23 @@
+.hero-container {
+  animation: FadeIn 1.5s ease-in-out;
+}
+.scroll-down-button {
+  animation: MoveUpDown 1.5s ease-in-out infinite;
+}
+  
+@keyframes MoveUpDown {
+  0%, 100% {
+    @apply bottom-0;
+  }
+  50% {
+    @apply bottom-25;
+  }
+}
+@keyframes FadeIn {
+  from {
+    @apply opacity-0;
+  }
+  to {
+    @apply opacity-100;
+  }
+}

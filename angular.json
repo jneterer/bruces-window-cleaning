@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "angular-business-theme": {
+    "bruces-window-cleaning": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -15,9 +15,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/angular-business-theme",
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
+            },
+            "outputPath": "dist/bruces-window-cleaning",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,20 +67,18 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "angular-business-theme:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "angular-business-theme:build:production"
+            "browserTarget": "bruces-window-cleaning:build",
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-business-theme:build"
+            "browserTarget": "bruces-window-cleaning:build"
           }
         },
         "test": {
@@ -114,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-business-theme:serve"
+            "devServerTarget": "bruces-window-cleaning:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-business-theme:serve:production"
+              "devServerTarget": "bruces-window-cleaning:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-business-theme"
+  "defaultProject": "bruces-window-cleaning"
 }
