@@ -26,7 +26,7 @@ export class AppComponent {
       img: 'bruce_screen.jpeg',
       imgAlt: 'Cleaning Window',
       title: 'Screens',
-      content: 'Surprisingly, screens can collect a bunch of dirt and flies. These are cleaned to ensure your window can stay clean for longer. Screens are priced at $1 per screen.',
+      content: 'Surprisingly, screens can collect a bunch of dirt and flies. These are cleaned to ensure your window can stay clean longer. Screens are priced at $1 per screen.',
       reversed: true
     }
   ];
