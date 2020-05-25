@@ -9,24 +9,24 @@ import { IImageContent } from './contacts/image-content/iimage-content';
 export class AppComponent {
   readonly imageContents: IImageContent[] =[
     {
-      img: 'cleaning_window.jpg',
+      img: 'bruce_2nd_story.jpeg',
       imgAlt: 'Cleaning Window',
-      title: '2nd Story Windows and Up',
-      content: 'I wash second story windows and up. Here is some information about it.',
+      title: '2nd Story Windows',
+      content: 'All 2nd story windows can be cleaned (safely) whether they’d be a skylight window, large arch windows, or regular windows. Any dirt, cobwebs, flies, etc.. on or around the window are also cleaned off. These windows are priced at $6 per window.  ',
       reversed: true
     },
     {
-      img: 'cleaning_window.jpg',
+      img: 'bruce_ground_floor_1.jpeg',
       imgAlt: 'Cleaning Window',
       title: 'Ground Floor Windows',
-      content: 'I wash ground floor windows. Here is some information about it.',
+      content: 'Patio doors, windowpanes, garage windows, and all types of windows are cleaned with precision.  Any dirt, cobwebs, flies, etc.. on or around the window are also cleaned off. These windows are priced at $4 per window.',
       reversed: false
     },
     {
-      img: 'cleaning_window.jpg',
+      img: 'bruce_screen.jpeg',
       imgAlt: 'Cleaning Window',
       title: 'Screens',
-      content: 'I wash screens. Here is some information about it.',
+      content: 'Surprisingly, screens can collect a bunch of dirt and flies. These are cleaned to ensure your window can stay clean for longer. Screens are priced at $1 per screen.',
       reversed: true
     }
   ];
