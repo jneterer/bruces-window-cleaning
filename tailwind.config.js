@@ -1,7 +1,6 @@
-const enablePurge = process.env.NODE_ENV || false;
 module.exports = {
   purge: {
-    enabled: enablePurge,
+    enabled: true,
     content: [
       './src/**/*.html',
       './src/**/*.scss'
