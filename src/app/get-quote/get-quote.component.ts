@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { secondStoryCost, groundFloorCost } from '../constants';
+import { secondStoryCost, groundFloorCost, screenCost } from '../constants';
 
 @Component({
   selector: 'app-get-quote',
@@ -13,6 +13,7 @@ export class GetQuoteComponent implements OnInit {
   totalCost: number = 0;
   groundFloorCost: number = groundFloorCost;
   secondStoryCost: number = secondStoryCost;
+  screenCost: number = screenCost;
 
   constructor() { }
 
@@ -20,7 +21,7 @@ export class GetQuoteComponent implements OnInit {
   }
 
   calculateTotal(event: number) {
-    this.totalCost = Math.abs(this.secondStoryAndUp) * this.secondStoryCost + Math.abs(this.groundFloor) * this.groundFloorCost + Math.abs(this.screens * 1);
+    this.totalCost = Math.abs(this.secondStoryAndUp) * this.secondStoryCost + Math.abs(this.groundFloor) * this.groundFloorCost + Math.abs(this.screens) * this.screenCost;
   }
 
 }
